@@ -1,0 +1,77 @@
+/* registration-form.css */
+
+/* Customize your CSS here */
+body {
+    background-color: #f8f9fa;
+    background-image: url('/assets/logo.png');
+  }
+  
+  .registration-form {
+    /* background-color: #ffffff; */
+    border-radius: 10px;
+    height: 60vh;
+    margin-top: 150px !important;
+    margin-left: 250px !important;
+    padding: 20px;
+    width: 50vw;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; 
+    margin: 0; 
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .registration-form::before {
+    content: "";
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9)); /* Adjust alpha values */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Place it behind the form content */
+    border-radius: 10px;
+}
+
+  
+  .registration-header img {
+    max-width: 100%; /* Set the maximum width to 100% of the parent container (col-6) */
+    height: auto; 
+    padding: 20px;
+    text-align: center;
+    /* Automatically adjust the height to maintain the aspect ratio */
+}
+.signup{
+  box-sizing: border-box;
+  /* margin-left: 9%; */
+  width:77%;
+  border: 0 solid #e5e7eb;
+  margin-left: 3%;
+  --bs-btn-active-bg: #729d55;
+  height: 45px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background-color: #61da10;
+}
+.close{
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+  height: 45px;
+  width: 20%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.h6head{
+  font-size: 25px;
+  font-weight: bold;
+}
+.form-control{
+  height: 50px;
+}
+
+.success-snackbar {
+  background-color: #4caf50;
+  color: white;
+}
+.error-snackbar {
+  background-color: #f44336;
+  color: white;
+}

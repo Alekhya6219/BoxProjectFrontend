@@ -1,0 +1,45 @@
+<!-- Your Angular registration component template -->
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="registration-form row">
+                <h6 class="h6head">REGISTRATION FORM</h6>
+                <div class="col-12">
+                    <form #addForm="ngForm" (ngSubmit)="onAddUser(addForm)">
+                        <div class="mb-3">
+                            <input class="form-control" type="text" ngModel name="name" name="name" id="name"
+                                placeholder="Name">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" type="text" ngModel name="username" name="username"
+                                id="username" placeholder="Username" required>
+                        </div>
+                        <div class="mb-3" *ngFor="let user of users">
+                            <input class="form-control" type="text" [(ngModel)]="user.role" id="role" placeholder="Role"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" type="text" ngModel name="password" name="password"
+                                id="password" placeholder="Password" required>
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" type="number" ngModel name="usermobile" name="usermobile"
+                                id="usermobile" placeholder="Mobile" required>
+                        </div>
+                        <div class="mb-3">
+                            <button routerLink="/nav" type="button" id="add-employee-form"
+                                class=" close btn btn-danger">Close</button>
+                            <button [disabled]="addForm.invalid" class="signup btn btn-success"
+                                type="submit">SAVE</button>
+                        </div>
+                    </form>
+                    <div class="mt-3">
+                        <span class="text-backlink">Already have an account?</span>
+                        <a [routerLink]="['/']" [queryParams]="{ showLogin: true }">Click here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

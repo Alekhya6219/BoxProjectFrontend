@@ -1,0 +1,10 @@
+
+.activity-name{
+    font-size: 32px;
+}
+.main{
+    position: absolute;
+    box-sizing: border-box;
+    left: 5px;
+    right: 5px;
+}

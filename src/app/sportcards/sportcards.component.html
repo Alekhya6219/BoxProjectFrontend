@@ -1,0 +1,25 @@
+<app-navsecond></app-navsecond>
+<div class="row card-container">
+    <div *ngFor="let activityData of activity" class="col-md-4">
+        <div class="cards mb-4 ">
+            <div class="card-header">
+                <img class="card-image" [src]="'assets/game.webp'">
+            </div>
+            <div class="card-body">
+                <div class="title_price d-flex">
+                    <p class=" p-body card-title">{{ activityData.activity_name }}</p>
+                    <p class="price p-body card-text">${{ activityData.activity_price }}</p>
+                </div>
+                <p class="p-body address-p card-text">{{ activityData.activity_city }},{{ activityData.activity_state }}</p>
+                <p class="p-body card-text">{{ activityData.activity_address }}</p>
+            </div>
+            <div class="card-footer d-flex">
+                <p class="p-body card-text-b">
+                    <img class="image-star" [src]="'assets/star.svg'" alt="Logo">
+                     {{ activityData.activity_rating }}
+                </p>
+                <button class="bookbtn btn btn-primary" routerLink="/bookcard">Book Now</button>
+            </div>
+        </div>
+    </div>
+</div>

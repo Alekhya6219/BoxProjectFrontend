@@ -1,0 +1,82 @@
+
+.card-footer {
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.p-body{
+    margin: 10px;
+}
+.image-star{
+    margin-bottom: 5px;
+}
+.price{
+    font-weight: bolder;
+}
+.bookbtn{
+    margin-bottom: 5px !important;
+    --bs-btn-active-bg: #3d5e4c;
+    background-color: #00B652;
+    outline: 1px solid #00B652; 
+    color: white;
+    height: 36px !important;
+    width: 97px !important; 
+    --bs-btn-border-color: none;
+}
+
+.address-p{
+    font-weight: 500;
+}
+
+.card-container {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%; /* Set maximum width to 100% of the viewport */
+    overflow-x: hidden; 
+    margin-bottom: 20px; 
+}
+
+.cards {
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 500px;
+    box-shadow: 0 34px 19px 0 #0000001a;
+    border-radius: 0.5rem !important;
+    --tw-border-opacity: 0.2;
+    --tw-bg-opacity: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+}
+.card-header{
+    height: 220px;
+}
+.card-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-body{
+    margin-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-title{
+    font-weight: bolder;
+    font-size: 20px;
+    color:  #61da10;
+}
+.card-text{
+    font-size: 15px;
+}
+
+.title_price{
+    justify-content: space-between;
+}
